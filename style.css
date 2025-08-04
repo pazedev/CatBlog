@@ -22,6 +22,11 @@ li {
 a {
   text-decoration: none;
   margin: 0;
+  color: #216869;
+}
+
+a:hover {
+  color: #001516;
 }
 
 img {
@@ -252,4 +257,28 @@ nav a:hover {
   margin-top: 10px;
   font-size: 1em;
   color: #001516;
+}
+
+/* Contact Section */
+
+.contact {
+  background: #9cc5a1;
+  margin: 0 auto;
+  padding: 60px 45px;
+  max-width: 800px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.contact h3 {
+  font-size: 2rem;
+  color: #001516;
+  margin-bottom: 1em;
+}
+
+footer {
+  text-align: center;
+  padding: 10px;
+  font-size: 0.8rem;
 }
