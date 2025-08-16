@@ -22,11 +22,11 @@ li {
 a {
   text-decoration: none;
   margin: 0;
-  color: #216869;
+  color: #001516;
 }
 
 a:hover {
-  color: #001516;
+  color: #49a078;
 }
 
 img {
@@ -51,7 +51,7 @@ img {
 
 nav {
   background: #49a078;
-  height: 3rem;
+  height: 4rem;
   display: flex; /* Faz a nav virar flex */
   justify-content: center; /* Centraliza o UL horizontalmente */
   align-items: center;
@@ -61,7 +61,6 @@ ul {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  max-width: 600px;
   width: 100%;
   margin: 0 auto;
   max-width: 800px;
@@ -97,7 +96,7 @@ nav a:hover {
   max-width: 800px;
   display: flex;
   justify-content: center;
-  align-items: stretch;
+  align-items: space-between;
   gap: 20px;
 }
 
@@ -120,11 +119,10 @@ nav a:hover {
 }
 
 .image-content {
-  flex: 1 1 160px;
+  flex: 1 1 300px;
 }
 
 .image-content img {
-  height: 100%;
   object-fit: cover;
   border-radius: 5px;
 }
@@ -262,7 +260,7 @@ nav a:hover {
 /* Contact Section */
 
 .contact {
-  background: #9cc5a1;
+  background: #49a078;
   margin: 0 auto;
   padding: 60px 45px;
   max-width: 800px;
@@ -273,12 +271,28 @@ nav a:hover {
 
 .contact h3 {
   font-size: 2rem;
-  color: #001516;
+  color: #dce1de;
   margin-bottom: 1em;
+}
+
+.contact p {
+  font-size: 1.2rem;
+  line-height: 1.5;
+  color: #dce1de;
 }
 
 footer {
   text-align: center;
   padding: 20px;
   font-size: 0.8rem;
+}
+
+@media (max-width: 700px) {
+  .about {
+    flex-direction: column;
+    align-items: center;
+  }
+  .content {
+    margin: 0;
+  }
 }
