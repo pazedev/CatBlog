@@ -1,31 +1,45 @@
 # 🐾 CatBlog
 
-CatBlog é um projeto desenvolvido para praticar HTML, CSS e Flexbox, inspirado no curso [FlexBlog da Origamid](https://www.origamid.com/curso/css-flexbox/).  
-O site explora o universo felino com seções de Mistérios, Brincadeiras, Curiosidades e até um Clube do Gato!
+[![Demo](https://img.shields.io/badge/🔗%20View%20Live%20Site-orange)](https://pazedev.github.io/CatBlog/)
+
+CatBlog is a project developed to practice HTML, CSS, and Flexbox, inspired by the [Origamid FlexBlog course](https://www.origamid.com/curso/css-flexbox/).  
+The site explores the feline universe with sections on Mysteries, Playtime, Curiosities, and even a Cat Club!
 
 ---
 
-## 🔗 Acesse o projeto online
+## ✨ Goal
 
-<a href="https://pazedev.github.io/CatBlog/">Catblog</a>
+- Practice **Flexbox** in a real project, following the FlexBlog lesson from Origamid.
+- Build a **responsive and modern layout** that works on both mobile and larger screens.
 
-## 🚀 Tecnologias Utilizadas
+---
+
+## 🚀 Technologies Used
 
 - HTML5
 - CSS3
-- Flexbox para layout responsivo
+- Flexbox for responsive layout
 - Google Fonts
 - Material Symbols (Google Icons)
 
 ---
 
-## 🎯 Objetivo do Projeto
+## 🖼️ Screenshots
 
-- Praticar Flexbox em um projeto real, seguindo a aula de Flexbox do curso da Origamid
-- Estruturar um layout responsivo e moderno, que funciona tanto no mobile quanto em telas maiores
+### Layout Preview
+
+<p align="center">
+  <img src="./img/print.png" width="500">
+</p>
 
 ---
 
-## 📬 Contato
+## 🔗 Access the Live Project
 
-💌 E-mail: pazedev@gmail.com
+[CatBlog Live](https://pazedev.github.io/CatBlog/)
+
+---
+
+## 📬 Contact
+
+💌 Email: pazedev@gmail.com
