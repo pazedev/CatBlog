@@ -127,18 +127,16 @@ header a:hover {
   padding: 40px;
   display: flex;
   justify-content: space-between;
-  align-items: bottom;
   gap: 40px;
 }
 
 .content {
   flex: 2 1 400px;
   max-width: 900px;
-  overflow: visible;
 }
 
 .content h2 {
-  font-size: 3rem;
+  font-size: 40px;
   color: #ffff;
   margin-bottom: 1em;
 }
@@ -170,118 +168,106 @@ header a:hover {
   max-height: 220px;
 }
 
-@media (max-width: 600px) {
-  .about {
-    flex-direction: column;
-    align-items: center;
-    position: relative; /* mantém como referência */
-  }
-
-  .image-content {
-    position: absolute; /* tira do fluxo */
-    top: -200px; /* sobe para cima do about */
-    right: 20px; /* ajusta pro lado */
-    width: 120px;
-    height: 300px;
-  }
-
-  .image-content img {
-    width: 100%;
-    height: auto;
-    border-radius: 12px;
-  }
-}
-
 /* Club Section */
 .club {
   max-width: 960px;
   margin: 0 auto;
-  padding: 60px 45px;
-  max-width: 800px;
+  padding: 100px 45px;
   display: flex;
   flex-direction: column;
 }
 
 .club h2 {
-  font-size: 2rem;
-  color: #ffff;
+  color: #001516;
+  font-size: 40px;
   margin-bottom: 1em;
 }
 
 .club-content {
   display: flex;
+  align-items: center;
   justify-content: space-between;
-  flex-wrap: wrap;
-  gap: 30px;
 }
 
 .club-item {
-  background-color: #fff;
-  padding: 40px 0;
-  border-radius: 5px;
-  flex: 1 1 200px;
+  background-color: #216869;
+  border-radius: 10px;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  gap: 10px;
+  max-width: 500px;
+  min-width: 100px;
+  min-height: 200px;
+  padding: 20px;
 }
 
 .club-item h3 {
-  font-size: 1.5rem;
-  color: #001516;
+  font-size: 25px;
+  color: #fff;
 }
 
-.blue-1 {
-  border-top: 10px solid #dce1de;
-}
-
-.blue-2 {
-  border-top: 10px solid #9cc5a1;
-}
-
-.blue-3 {
-  border-top: 10px solid #49a078;
-}
-
-.club-item p {
-  font-size: 1rem;
-  line-height: 2;
-  color: #001516;
+.top-border {
+  border-top: 10px solid #fff;
 }
 
 .club-item ul {
   display: flex;
+  justify-content: center;
   flex-direction: column;
   gap: 10px;
 }
 
 .club-item span {
-  font-size: 3rem;
+  font-size: 50px;
   font-weight: bold;
-  color: #216869;
+  color: #fff;
   border-bottom: #dce1de solid 2px;
-  padding: 20px 60px;
+  padding: 20px 0;
+  margin: 10px 0;
 }
 
 .club-item sup {
-  font-size: 1.5rem;
+  font-size: 25px;
   font-weight: normal;
 }
 
 .club-item li {
   margin-top: 10px;
-  font-size: 1em;
-  color: #001516;
+  font-size: 20px;
+  color: #fff;
+}
+
+@media (max-width: 600px) {
+  .club-item {
+    padding: 15px;
+  }
+
+  .club-item h3 {
+    font-size: 15px;
+  }
+
+  .club-item span {
+    font-size: 30px;
+  }
+
+  .club-item sup {
+    font-size: 15px;
+    font-weight: normal;
+  }
+
+  .club-item li {
+    font-size: 10px;
+  }
 }
 
 /* More Content */
 
 .more {
-  background-color: #9cc5a1;
+  background-color: #49a078;
   margin: 0 auto;
   padding: 60px 45px;
-  max-width: 800px;
+  max-width: 960px;
   display: flex;
   justify-content: center;
   flex-direction: column;
@@ -289,23 +275,24 @@ header a:hover {
 }
 
 .more h2 {
-  font-size: 2rem;
+  font-size: 40px;
+  color: #fff;
 }
 
 .more h3 {
-  font-size: 1.2rem;
+  font-size: 25px;
   margin-bottom: 0.5em;
-  color: #001516;
+  color: #fff;
 }
 
 .more p {
-  font-size: 1rem;
+  font-size: 15px;
   line-height: 1.5;
-  color: #001516;
+  color: #fff;
 }
 
 .more p:hover {
-  color: #216869;
+  color: #001516;
 }
 
 .title-text {
@@ -317,32 +304,44 @@ header a:hover {
 .more span {
   font-size: 1.2rem;
   font-weight: 600;
-  color: #216869;
+  color: #001516;
   margin-bottom: 0.5em;
 }
 
 /* Contact Section */
 
 .contact {
-  background: #49a078;
-  margin: 0 auto;
+  background-image: url("./img/bg-footer.png");
+  background-size: cover;
   padding: 60px 45px;
-  max-width: 800px;
+  max-width: 960px;
   display: flex;
-  justify-content: center;
+  margin: 0 auto;
   flex-direction: column;
 }
 
 .contact h3 {
-  font-size: 2rem;
-  color: #dce1de;
+  background: #dce1de;
+  font-size: 40px;
+  color: #001516;
   margin-bottom: 1em;
+  text-align: center;
 }
 
 .contact p {
+  background: #dce1de;
   font-size: 1.2rem;
   line-height: 1.5;
-  color: #dce1de;
+  color: #001516;
+  text-align: center;
+}
+
+.contact a {
+  color: #216869;
+}
+
+.contact a:hover {
+  color: #104c4f;
 }
 
 footer {
@@ -351,7 +350,7 @@ footer {
   font-size: 0.8rem;
 }
 
-@media (max-width: 700px) {
+@media (max-width: 600px) {
   .about {
     flex-direction: column;
     align-items: center;
