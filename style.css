@@ -39,74 +39,106 @@ img {
 }
 
 /* Header */
-.logo {
+
+header {
   background: #216869;
-  height: 4rem;
-  color: #ffff;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 10px;
 }
 
-nav {
-  background: #49a078;
-  height: 4rem;
-  display: flex; /* Faz a nav virar flex */
-  justify-content: center; /* Centraliza o UL horizontalmente */
-  align-items: center;
-}
-
-ul {
+.header {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 20px 0;
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
-  width: 100%;
-  margin: 0 auto;
-  max-width: 800px;
 }
-nav a {
+
+header h1 {
   color: #fff;
+  font-size: 2rem;
+}
+
+header ul {
+  display: flex;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+header a {
+  color: #fff;
+  font-size: 1.5rem;
   font-weight: bold;
   display: block;
   padding: 10px;
 }
 
-nav a:hover {
-  color: #dce1de;
+header a:hover {
+  color: #49a078;
+}
+
+@media (max-width: 600px) {
+  header {
+    background: none;
+  }
+
+  .header {
+    justify-content: center;
+  }
+
+  .header h1 {
+    color: #001516;
+    line-height: 5;
+    height: 90px;
+    margin-bottom: 20px;
+  }
+  .header nav {
+    width: 100%;
+    background: #216869;
+    padding: 10px;
+    justify-items: center;
+  }
 }
 
 /* Main */
 .title {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size: 1.5rem;
-  line-height: 1.2;
+  font-size: 30px;
+  line-height: 1;
+  max-width: 960px;
   margin: 0 auto;
-  padding: 60px 45px;
+  padding: 80px 0;
+}
+
+@media (max-width: 600px) {
+  .title {
+    max-width: 300px;
+    line-height: 1.2;
+    margin: 0 40px;
+    padding: 40px 0;
+  }
 }
 
 /* About Section */
 
 .about {
+  max-width: 960px;
   background-color: #49a078;
   margin: 0 auto;
-  padding: 60px 45px;
-  max-width: 800px;
+  padding: 40px;
   display: flex;
-  justify-content: center;
-  align-items: space-between;
-  gap: 20px;
+  justify-content: space-between;
+  align-items: bottom;
+  gap: 40px;
 }
 
 .content {
-  margin: 0 auto;
-  flex: 2 1 300px;
+  flex: 2 1 400px;
+  max-width: 900px;
+  overflow: visible;
 }
 
 .content h2 {
-  font-size: 2rem;
+  font-size: 3rem;
   color: #ffff;
   margin-bottom: 1em;
 }
@@ -119,68 +151,54 @@ nav a:hover {
 }
 
 .image-content {
-  flex: 1 1 300px;
+  flex: 1 1 200px;
+  display: flex;
+  gap: 20px;
 }
 
 .image-content img {
   object-fit: cover;
-  border-radius: 5px;
 }
 
-/* More Content */
-
-.more {
-  background-color: #9cc5a1;
-  margin: 0 auto;
-  padding: 60px 45px;
-  max-width: 800px;
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  gap: 40px;
+.img1 {
+  max-width: 220px;
+  max-height: 550px;
 }
 
-.more h2 {
-  font-size: 2rem;
+.img2 {
+  max-width: 220px;
+  max-height: 220px;
 }
 
-.more h3 {
-  font-size: 1.2rem;
-  margin-bottom: 0.5em;
-  color: #001516;
-}
+@media (max-width: 600px) {
+  .about {
+    flex-direction: column;
+    align-items: center;
+    position: relative; /* mantém como referência */
+  }
 
-.more p {
-  font-size: 1rem;
-  line-height: 1.5;
-  color: #001516;
-}
+  .image-content {
+    position: absolute; /* tira do fluxo */
+    top: -200px; /* sobe para cima do about */
+    right: 20px; /* ajusta pro lado */
+    width: 120px;
+    height: 300px;
+  }
 
-.more p:hover {
-  color: #216869;
-}
-
-.title-text {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-}
-
-.more span {
-  font-size: 1.2rem;
-  font-weight: 600;
-  color: #216869;
-  margin-bottom: 0.5em;
+  .image-content img {
+    width: 100%;
+    height: auto;
+    border-radius: 12px;
+  }
 }
 
 /* Club Section */
 .club {
-  background-color: #216869;
+  max-width: 960px;
   margin: 0 auto;
   padding: 60px 45px;
   max-width: 800px;
   display: flex;
-  justify-content: center;
   flex-direction: column;
 }
 
@@ -255,6 +273,52 @@ nav a:hover {
   margin-top: 10px;
   font-size: 1em;
   color: #001516;
+}
+
+/* More Content */
+
+.more {
+  background-color: #9cc5a1;
+  margin: 0 auto;
+  padding: 60px 45px;
+  max-width: 800px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.more h2 {
+  font-size: 2rem;
+}
+
+.more h3 {
+  font-size: 1.2rem;
+  margin-bottom: 0.5em;
+  color: #001516;
+}
+
+.more p {
+  font-size: 1rem;
+  line-height: 1.5;
+  color: #001516;
+}
+
+.more p:hover {
+  color: #216869;
+}
+
+.title-text {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.more span {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #216869;
+  margin-bottom: 0.5em;
 }
 
 /* Contact Section */
