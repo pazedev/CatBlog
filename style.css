@@ -88,8 +88,7 @@ header a:hover {
 
   .header h1 {
     color: #001516;
-    line-height: 5;
-    height: 90px;
+    height: 40px;
     margin-bottom: 20px;
   }
   .header nav {
@@ -97,6 +96,9 @@ header a:hover {
     background: #216869;
     padding: 10px;
     justify-items: center;
+  }
+  .header a {
+    font-size: 1.2rem;
   }
 }
 
@@ -126,13 +128,12 @@ header a:hover {
   margin: 0 auto;
   padding: 40px;
   display: flex;
-  justify-content: space-between;
-  gap: 40px;
+  gap: 30px;
 }
 
 .content {
-  flex: 2 1 400px;
-  max-width: 900px;
+  max-width: 600px;
+  min-width: 300px;
 }
 
 .content h2 {
@@ -149,7 +150,6 @@ header a:hover {
 }
 
 .image-content {
-  flex: 1 1 200px;
   display: flex;
   gap: 20px;
 }
@@ -166,6 +166,15 @@ header a:hover {
 .img2 {
   max-width: 220px;
   max-height: 220px;
+}
+
+@media (max-width: 600px) {
+  .img1 {
+    max-width: 100%;
+  }
+  .img2 {
+    display: none;
+  }
 }
 
 /* Club Section */
@@ -200,6 +209,7 @@ header a:hover {
   min-width: 100px;
   min-height: 200px;
   padding: 20px;
+  gap: 20px;
 }
 
 .club-item h3 {
@@ -240,7 +250,7 @@ header a:hover {
 
 @media (max-width: 600px) {
   .club-item {
-    padding: 15px;
+    padding: 10px;
   }
 
   .club-item h3 {
@@ -249,6 +259,7 @@ header a:hover {
 
   .club-item span {
     font-size: 30px;
+    margin: 0;
   }
 
   .club-item sup {
